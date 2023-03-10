@@ -1,0 +1,124 @@
+[versions]
+#default settings region
+versionCode = "1"
+versionName = "1.0"
+compileSdk = "33"
+minSdk = "24"
+targetSdk = "31"
+
+#androix deps region
+
+androidMaterial = "1.8.0"
+androidxActivity = "1.6.1"
+androidxAnnotation = "1.5.0"
+androixAppCompat = "1.6.1"
+androidxBrowser = "1.5.0"
+androidxCardView = "1.0.0"
+androidxCore = "1.9.0"
+androidxConstraintLayout = "2.1.4"
+androidxCoordinatorLayout = "1.2.0"
+androidxFragment = "1.5.5"
+androidxInterpolator = "1.0.0"
+androidxLifecycle = "2.5.1"
+androidxPalette = "1.0.0"
+androidxRecyclerView = "1.2.1"
+androidxSwipeRefresh = "1.1.0"
+androidxWork = "2.8.0"
+androidxSecurity = "1.1.0-alpha04"
+
+# UI
+coil = "2.2.1"
+
+#Network
+okhttp = "4.10.0"
+retrofit = "2.9.0"
+retrofitKotlinxSerialConverter = "0.8.0"
+
+# Coroutines
+kotlinCoroutines = "1.6.4"
+
+# DI
+dagger = "2.45"
+
+# Db
+room = "2.5.0"
+sqlite = "2.3.0"
+sqlcipher = "4.5.3"
+
+#Utils
+
+##ViewBindingDelegate
+viewBindingDelegate = "1.5.8"
+
+[libraries]
+# AndroidX
+androidx-activity = { module = "androidx.activity:activity", version.ref = "androidxActivity" }
+androidx-activityKtx = { module = "androidx.activity:activity-ktx", version.ref = "androidxActivity" }
+androidx-core = { module = "androidx.core:core", version.ref = "androidxCore" }
+androidx-coreKtx = { module = "androidx.core:core-ktx", version.ref = "androidxCore" }
+androidx-annotation = { module = "androidx.annotation:annotation", version.ref = "androidxAnnotation" }
+androidx-appCompat = { module = "androidx.appcompat:appcompat", version.ref = "androixAppCompat" }
+androidx-appCompatResources = { module = "androidx.appcompat:appcompat-resources", version.ref = "androixAppCompat" }
+androidx-recyclerView = { module = "androidx.recyclerview:recyclerview", version.ref = "androidxRecyclerView" }
+androidx-coordinatorLayout = { module = "androidx.coordinatorlayout:coordinatorlayout", version.ref = "androidxCoordinatorLayout" }
+androidx-cardView = { module = "androidx.cardview:cardview", version.ref = "androidxCardView" }
+androidx-material = { module = "com.google.android.material:material", version.ref = "androidMaterial" }
+androidx-constraintLayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "androidxConstraintLayout" }
+androidx-fragment = { module = "androidx.fragment:fragment", version.ref = "androidxFragment" }
+androidx-fragmentKtx = { module = "androidx.fragment:fragment-ktx", version.ref = "androidxFragment" }
+androidx-palette = { module = "androidx.palette:palette", version.ref = "androidxPalette" }
+androidx-swipeRefreshLayout = { module = "androidx.swiperefreshlayout:swiperefreshlayout", version.ref = "androidxSwipeRefresh" }
+androidx-interpolator = { module = "androidx.interpolator:interpolator", version.ref = "androidxInterpolator" }
+androidx-browser = { module = "androidx.browser:browser", version.ref = "androidxBrowser" }
+androidx-workManagerRuntime = { module = "androidx.work:work-runtime-ktx", version.ref = "androidxWork" }
+androidx-securityCrypto = { module = "androidx.security:security-crypto-ktx", version.ref = "androidxSecurity" }
+
+# AndroidX Lifecycle
+androidx-lifecycle-common = { module = "androidx.lifecycle:lifecycle-common", version.ref = "androidxLifecycle" }
+androidx-lifecycle-viewModelKtx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "androidxLifecycle" }
+androidx-lifecycle-runtimeKtx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "androidxLifecycle" }
+androidx-lifecycle-kapt = { module = "androidx.lifecycle:lifecycle-compiler", version.ref = "androidxLifecycle" }
+
+# Coroutines
+kotlin-coroutinesCore = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinCoroutines" }
+kotlin-coroutinesAndroid = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinCoroutines" }
+kotlin-coroutinesTest = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinCoroutines" }
+
+# Networking
+networking-okHttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
+networking-okHttpLoggingInterceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "okhttp" }
+
+# Networking Retrofit
+networking-retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+networking-retrofitKotlinxSerialConverter = { module = "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter", version.ref = "retrofitKotlinxSerialConverter" }
+
+# UI
+ui-coil = { module = "io.coil-kt:coil", version.ref = "coil" }
+ui-viewBindingDelegate = { module = "com.github.kirich1409:viewbindingpropertydelegate", version.ref = "viewBindingDelegate" }
+
+# DI
+di-dagger = { module = "com.google.dagger:dagger", version.ref = "dagger" }
+di-daggerCompiler = { module = "com.google.dagger:dagger-compiler", version.ref = "dagger" }
+
+# Db
+db-room-common = { module = "androidx.room:room-common", version.ref = "room" }
+db-room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
+db-roomCompiler = { module = "androidx.room:room-compiler", version.ref = "room" }
+db-sqlite = { module = "androidx.sqlite:sqlite", version.ref = "sqlite" }
+db-sqlCipher = { module = "net.zetetic:android-database-sqlcipher", version.ref = "sqlcipher" }
+
+[bundles]
+androidx = ["androidx-activity", "androidx-activityKtx", "androidx-core", "androidx-coreKtx",
+    "androidx-annotation", "androidx-appCompat", "androidx-appCompatResources", "androidx-recyclerView",
+    "androidx-coordinatorLayout", "androidx-cardView", "androidx-material", "androidx-constraintLayout",
+    "androidx-fragment", "androidx-fragmentKtx", "androidx-palette", "androidx-swipeRefreshLayout",
+    "androidx-interpolator", "androidx-browser", "androidx-workManagerRuntime", "androidx-securityCrypto"]
+
+db = ["db-room-common", "db-room-runtime", "db-sqlite", "db-sqlCipher"]
+
+network = ["networking-okHttp", "networking-okHttpLoggingInterceptor",
+    "networking-retrofitKotlinxSerialConverter", "networking-retrofit"]
+
+coroutines = ["kotlin-coroutinesAndroid", "kotlin-coroutinesCore", "kotlin-coroutinesTest"]
+
+lifecycle = ["androidx-lifecycle-common", "androidx-lifecycle-runtimeKtx", "androidx-lifecycle-viewModelKtx"]
